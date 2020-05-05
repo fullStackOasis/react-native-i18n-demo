@@ -19,3 +19,5 @@ I18n.locale = 'fr';
 ```
 
 See screenshot:
+
+![React Native i18n demo](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo.png)
