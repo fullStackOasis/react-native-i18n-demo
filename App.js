@@ -7,6 +7,8 @@
  */
 
 import React from 'react';
+import I18n from './i18n/i18n';
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -16,23 +18,33 @@ import {
   StatusBar,
 } from 'react-native';
 
+import LocalizedHeader from './LocalizedHeader';
+import LocalizedReloadInstructions from './LocalizedReloadInstructions';
 import {
-  Header,
   LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
+  DebugInstructions
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
-  return (
+	/* Debug?
+	import { getLanguages } from 'react-native-i18n';
+
+	getLanguages().then(languages => {
+		console.log("showing languages");
+		console.log(languages); // ['en-US', 'en']
+	});
+	*/
+	//I18n.defaultLocale = "fr";
+	I18n.locale = 'fr';
+	return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
+          <LocalizedHeader text={I18n.t('welcome')}/>
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
               <Text style={styles.footer}>Engine: Hermes</Text>
@@ -40,28 +52,27 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionTitle}>{I18n.t('step_one')}</Text>
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
+			  {I18n.t('edit_instr1')} <Text style={styles.highlight}>{I18n.t('edit_instr2')}</Text> {I18n.t('edit_instr3')}
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Text style={styles.sectionTitle}>{I18n.t('see_results')}</Text>
               <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
+                <LocalizedReloadInstructions />
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
+              <Text style={styles.sectionTitle}>{I18n.t('debug')}</Text>
               <Text style={styles.sectionDescription}>
                 <DebugInstructions />
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionTitle}>{I18n.t('learn_more')}</Text>
               <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
+			  {I18n.t('do_next')}
               </Text>
             </View>
             <LearnMoreLinks />
