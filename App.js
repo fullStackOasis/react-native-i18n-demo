@@ -36,7 +36,8 @@ const App: () => React$Node = () => {
 	});
 	*/
 	//I18n.defaultLocale = "fr";
-	I18n.locale = 'fr';
+	// For test purposes only, set the locale, and see your text change to the new language.
+	// I18n.locale = 'fr';
 	return (
     <>
       <StatusBar barStyle="dark-content" />
