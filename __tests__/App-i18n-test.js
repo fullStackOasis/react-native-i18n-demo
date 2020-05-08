@@ -27,3 +27,19 @@ it('App renders strings in **English**', () => {
 	expect(h).toMatchSnapshot();
 });
 
+
+it('App renders strings in **US English**', () => {
+	I18n.locale = 'en-US';
+	const h = renderer
+		.create(<App/>)
+		.toJSON();
+	expect(h).toMatchSnapshot();
+});
+
+it('App renders strings in **Dutch**', () => {
+	I18n.locale = 'nl';
+	const h = renderer
+		.create(<App/>)
+		.toJSON();
+	expect(h).toMatchSnapshot();
+});
