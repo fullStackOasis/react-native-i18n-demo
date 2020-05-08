@@ -20,9 +20,18 @@ Then just follow the "usage" examples on the above website. You have to set the 
 I18n.locale = 'fr';
 ```
 
-See screenshot:
+See screenshot using the emulator on my computer, with `i18n.js` using these two lines:
+```
+I18n.defaultLocale = "fr";
+I18n.locale = "fr";
+```
+to force the app to use French.
 
 ![React Native i18n demo](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo.png)
+
+Here's a screenshot taken of the app running in an Android device in the Netherlands. I18n.fallbacks is set to true, so that 'nl' is sufficient, and neither 'nl-NL' nor 'nl-BE' are required.
+
+![React Native i18n demo on device in NL](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo-nl.png)
 
 ## Snapshot tests using jest
 
