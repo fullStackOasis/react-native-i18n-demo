@@ -9,7 +9,7 @@ I18n.translations = {
   fr : fr,
   nl : nl
 };
-I18n.fallbacks = false;
+I18n.fallbacks = true;
 /** Testing French */
 /*
 I18n.defaultLocale = "fr";
