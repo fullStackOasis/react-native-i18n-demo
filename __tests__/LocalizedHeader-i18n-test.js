@@ -4,7 +4,6 @@
 
 import 'react-native';
 import React from 'react';
-import App from '../App';
 import LocalizedHeader from '../LocalizedHeader';
 import I18n from '../i18n/i18n';
 
@@ -27,4 +26,4 @@ it('LocalizedHeader renders strings in **English**', () => {
 		.toJSON();
 	expect(h).toMatchSnapshot();
 });
-  
+
