@@ -14,6 +14,23 @@ npm install react-native-i18n --save
 react-native link
 ```
 
+After getting projects set up, you can run the app in the Android Emulator by doing these steps:
+
+```
+# For example:
+emulator -avd Galaxy_Nexus_API_28
+```
+
+And in another terminal window do:
+
+```
+cd ~/Projects/ReactNativeI18n
+# Install
+npx react-native run-android
+# Hot reloads
+npm start
+```
+
 Then just follow the "usage" examples on the above website. You have to set the locale in your app:
 
 ```
@@ -29,11 +46,9 @@ to force the app to use French.
 
 ![React Native i18n demo](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo.png)
 
-Here's a screenshot taken of the app running in an Android device in the Netherlands. I18n.fallbacks is set to true, so that 'nl' is sufficient, and neither 'nl-NL' nor 'nl-BE' are required. Notice that some strings have not been translated into Dutch. Those lines are still hard-coded in English, as in the original project.
+Here's a screenshot taken of the app running in an Android device in the Netherlands. `I18n.fallbacks` is set to true, so that 'nl' is sufficient, and neither 'nl-NL' nor 'nl-BE' are required. Notice that some strings have not been translated into Dutch. Those lines are still hard-coded in English, as in the original project.
 
 ![React Native i18n demo on device in NL](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo-nl.png)
-
-
 
 ## Snapshot tests using jest
 
