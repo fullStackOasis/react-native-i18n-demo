@@ -1,9 +1,13 @@
 import I18n from 'react-native-i18n';
 import en from './locales/en';
+import en_US from './locales/en-US';
 import fr from './locales/fr';
+import nl from './locales/nl';
 I18n.translations = {
-  en,
-  fr
+  en : en,
+  'en-US' : en_US,
+  fr : fr,
+  nl : nl
 };
 I18n.fallbacks = false;
 /** Testing French */

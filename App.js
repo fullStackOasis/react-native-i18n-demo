@@ -25,11 +25,10 @@ import {
   Colors,
   DebugInstructions
 } from 'react-native/Libraries/NewAppScreen';
-
+// import { getLanguages } from 'react-native-i18n';
 const App: () => React$Node = () => {
-	/* Debug?
-	import { getLanguages } from 'react-native-i18n';
-
+	/* Debug */
+	/*
 	getLanguages().then(languages => {
 		console.log("showing languages");
 		console.log(languages); // ['en-US', 'en']
@@ -37,7 +36,7 @@ const App: () => React$Node = () => {
 	*/
 	//I18n.defaultLocale = "fr";
 	// For test purposes only, set the locale, and see your text change to the new language.
-	// I18n.locale = 'fr';
+	// I18n.locale = 'nl';
 	return (
     <>
       <StatusBar barStyle="dark-content" />
