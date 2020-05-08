@@ -29,9 +29,11 @@ to force the app to use French.
 
 ![React Native i18n demo](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo.png)
 
-Here's a screenshot taken of the app running in an Android device in the Netherlands. I18n.fallbacks is set to true, so that 'nl' is sufficient, and neither 'nl-NL' nor 'nl-BE' are required.
+Here's a screenshot taken of the app running in an Android device in the Netherlands. I18n.fallbacks is set to true, so that 'nl' is sufficient, and neither 'nl-NL' nor 'nl-BE' are required. Notice that some strings have not been translated into Dutch. Those lines are still hard-coded in English, as in the original project.
 
 ![React Native i18n demo on device in NL](https://github.com/fullStackOasis/react-native-i18n-demo/raw/master/react-native-i18n-demo-nl.png)
+
+
 
 ## Snapshot tests using jest
 
