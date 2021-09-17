@@ -112,3 +112,14 @@ Snapshots:   1 written, 1 total
 Time:        1.112s, estimated 2s
 Ran all test suites matching /App-i18n-test.js/i.
 ```
+
+### Detox tests
+
+Install [detox](https://github.com/wix/Detox/blob/master/docs/Introduction.GettingStarted.md)
+
+[See documentation for complete details about the config file](https://github.com/wix/Detox/blob/master/docs/APIRef.Configuration.md).
+
+Run in android dir: `./gradlew assembleAndroidTest`
+Run `detox test --configuration android.emu.release`
+
+

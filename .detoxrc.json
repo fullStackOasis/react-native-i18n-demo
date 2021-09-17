@@ -7,7 +7,7 @@
         "avdName": "R5CN8111D6J"
       }
     },
-    "device": {
+    "android.attached": {
       "type": "android.attached",
       "device": {
         "adbName": "R5CN8111D6J"
@@ -22,6 +22,7 @@
     },
     "android.release": {
       "type": "android.apk",
+      "testBinaryPath": "android/app/build/outputs/apk/release/app-release.apk",
       "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
       "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd .."
     }
@@ -33,6 +34,10 @@
     },
     "android.emu.release": {
       "device": "device",
+      "app": "android.release"
+    },
+    "android.att.release": {
+      "device": "android.attached",
       "app": "android.release"
     }
   }
